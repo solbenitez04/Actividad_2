@@ -1,0 +1,150 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 80%;
+    height: 100%;
+    margin: 0 auto;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    padding: 1%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    border-bottom: 0.1rem solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+header li {
+    text-transform: uppercase;
+}
+
+main {
+    margin-top: 15vh;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    text-align: center;
+    padding: 1%;
+    border-top: 0.1rem solid black;
+    background-color: rgb(255, 255, 255);
+}
+
+footer p {
+    font-size: x-large;
+}
+
+.indice_recetas_home ul {
+    list-style: none;
+    display: flex;
+    gap: 2%;
+    font-size: x-large;
+    justify-content: center;
+}
+
+.indice_recetas_home a {
+    text-decoration: none;
+    color: black;
+}
+
+.contenedor_general_recetas {
+    width: 80%;
+    margin: 0 auto;
+    display: grid;
+    grid-template-columns: 1fr;
+    row-gap: 2%;
+}
+
+.contenedor_receta {
+    border: 0.4vh solid black;
+    padding: 3%;
+    margin: 0 auto;
+    width: 100%;
+    border-radius: 5vh 0;
+}
+
+.contenedor_imagen_receta {
+    width: 100%;
+    height: 20vh;
+    margin: 0 auto;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+}
+
+.contenedor_receta img {
+    width: 90%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+}
+
+.contenedor_receta h2 {
+    text-transform: uppercase;
+    margin-bottom: 2%;
+    text-align: center;
+}
+
+.contenedor_receta h3 {
+    margin-top: 2%;
+}
+
+.pasos li {
+    padding: 0.5%;
+    margin: 1% 3%;
+}
+
+.contenedor_formulario {
+    border: 0.4vh solid black;
+    background-color: rgb(228, 217, 255);
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 1.5rem;
+}
+
+.contenedor_formulario label {
+    font-size: large;
+    margin-bottom: 0.5rem;
+    font-weight: bold;
+}
+
+.contenedor_formulario input, textarea {
+    padding: 0.8rem;
+    border: 0.1rem solid black;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.button {
+    display: flex;
+    justify-content: flex-end;
+    gap: 1.5rem;
+    margin-top: 1rem;
+}
+
+.button button {
+    padding: 0.5rem 2rem;
+    border-color: black;
+    border-radius: 0.5rem;
+    color: black;
+    cursor: pointer;
+    font-weight: bold;
+    font-size: large;
+}
+
+.enviar {
+    background-color: rgb(162, 211, 250);
+}
+
+.cancelar {
+    background-color: rgb(228, 150, 150);
+}
