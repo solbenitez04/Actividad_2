@@ -1,0 +1,96 @@
+body{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+main{
+    width: 100%;
+    height: 100vh;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas: "modelo-1 modelo-1 modelo-2 modelo-2"
+                         "modelo-3 modelo-4 modelo-5 modelo-6";
+    place-content: center;
+}
+
+.modelo-1{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 2rem;
+    background-color: lightgreen;
+    border: 1px solid black;
+    grid-area: modelo-1;
+    
+}
+.modelo-2{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 2rem;
+    background-color: lightyellow;
+    grid-area: modelo-2;
+    border: 1px solid black;
+}
+
+.modelo-3{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 2rem;
+    background-color: lightcoral;
+    grid-area: modelo-3;
+    border: 1px solid black;
+}
+
+.modelo-4{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 2rem;
+    background-color: lightcoral;
+    grid-area: modelo-4;
+    border: 1px solid black;
+}
+
+.modelo-5{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 2rem;
+    background-color: lightcoral;
+    grid-area: modelo-5;
+    border: 1px solid black;
+}
+.modelo-6{
+    display: grid;
+    place-content: center;
+    text-align: center;
+    font-size: 2rem;
+    background-color: lightcoral;
+    grid-area: modelo-6;
+    border: 1px solid black;
+}
+
+@media screen and (max-width: 480px){
+    main{
+        grid-template-columns: repeat(2, 1fr);
+        grid-template-rows: repeat(4, 1fr);
+        grid-template-areas: "modelo-1 modelo-1"
+                             "modelo-2 modelo-2"
+                             "modelo-3 modelo-4"
+                             "modelo-5 modelo-6";
+    }
+
+    .modelo-5{
+        background-color: lightblue;
+    }
+    .modelo-6{
+        background-color: lightblue;
+    }
+
+    .modelo-2{
+        margin-top: 1rem;
+    }
+}
