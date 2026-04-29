@@ -26,7 +26,8 @@ header li {
 }
 
 main {
-    margin-top: 15vh;
+    margin: 8em 0;
+    padding-bottom: 8em;
 }
 
 footer {
@@ -43,6 +44,8 @@ footer {
 footer p {
     font-size: x-large;
 }
+
+/* Styles home recetas */
 
 .indice_recetas_home ul {
     list-style: none;
@@ -66,11 +69,11 @@ footer p {
 }
 
 .contenedor_receta {
-    border: 0.4vh solid black;
+    border: 0.2em solid black;
     padding: 3%;
     margin: 0 auto;
     width: 100%;
-    border-radius: 5vh 0;
+    border-radius: 5em 0;
 }
 
 .contenedor_imagen_receta {
@@ -104,36 +107,54 @@ footer p {
     margin: 1% 3%;
 }
 
+/* styles contacto */
+
 .contenedor_formulario {
+    width: 70%;
+    margin: 5em auto;
+    padding: 2em;
     border: 0.4vh solid black;
     background-color: rgb(228, 217, 255);
-    display: flex;
-    flex-direction: column;
-    margin-bottom: 1.5rem;
 }
 
-.contenedor_formulario label {
+.campo {
+    display: flex;
+    align-items: center;
+    margin-bottom: 1em;
+}
+
+.campo_mensajes {
+    align-items: flex-start;
+}
+
+.campo label {
+    width: 8rem;
     font-size: large;
-    margin-bottom: 0.5rem;
     font-weight: bold;
 }
 
-.contenedor_formulario input, textarea {
-    padding: 0.8rem;
+.campo input {
+    width: 12rem;
+    padding: 0.3rem;
     border: 0.1rem solid black;
-    font-family: Arial, Helvetica, sans-serif;
 }
 
-.button {
+.campo_mensajes textarea {
+    width: 40rem;
+    height: 8rem;
+    border: 0.1rem solid black;
+}
+
+.botones {
     display: flex;
-    justify-content: flex-end;
-    gap: 1.5rem;
-    margin-top: 1rem;
+    justify-content: center;
+    gap: 3rem;
+    margin-top: 2rem;
 }
 
-.button button {
-    padding: 0.5rem 2rem;
-    border-color: black;
+.botones button {
+    padding: 0.5em 2em;
+    border: 0.1rem solid black;
     border-radius: 0.5rem;
     color: black;
     cursor: pointer;
@@ -141,10 +162,18 @@ footer p {
     font-size: large;
 }
 
-.enviar {
+.boton_enviar {
     background-color: rgb(162, 211, 250);
 }
 
-.cancelar {
+.boton_enviar:hover {
+    background-color: rgb(106, 153, 193);
+}
+
+.boton_cancelar {
     background-color: rgb(228, 150, 150);
+}
+
+.boton_cancelar:hover {
+    background-color: rgb(189, 124, 124);
 }

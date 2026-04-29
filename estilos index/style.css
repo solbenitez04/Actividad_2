@@ -1,0 +1,38 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    margin: 3em;
+}
+
+header h1 {
+    text-transform: uppercase;
+    font-size: 2em;
+}
+
+.contenedor_actividades {
+    margin: 3em;
+}
+
+.contenedor_actividades h2 {
+    margin-bottom: 1em;
+}
+
+.contenedor_actividades ul li {
+    margin-left: 3em;
+    padding-top: 1em;
+}
+
+.contenedor_actividades ul li a{
+    text-decoration: none;
+    color: black;
+}

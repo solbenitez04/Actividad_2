@@ -1,0 +1,87 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    width: 100%;
+    height: 100%;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+html {
+    scroll-padding-top: 20vh;
+}
+
+header {
+    padding: 1%;
+    top: 0;
+    left: 0;
+    width: 100%;
+    position: fixed;
+    border-bottom: 0.1em solid black;
+    background-color: rgb(216, 216, 216);
+}
+
+header li {
+    text-transform: uppercase;
+    list-style: none;
+}
+
+header li a {
+    text-decoration: none;
+    color: black;
+    font-size: x-large;
+    display: flex;
+    justify-content: center;
+}
+
+main {
+    margin: 4em 0 0;
+    background-color: rgb(234, 223, 223);
+    padding-bottom: 5em;
+}
+
+.contenedor_main {
+    width: 80%;
+    margin: 0 auto;
+}
+
+.indice_recetas {
+    margin-bottom: 38em;
+}
+
+.indice_recetas h1 {
+    padding: 2em 0 1em;
+}
+
+.indice_recetas ul li {
+    padding-top: 1em;
+}
+
+.indice_recetas ul li a {
+    text-decoration: none;
+    color: black;
+    padding-left: 1em;
+}
+
+.contenedor_receta {
+    width: 100%;
+    border: 0.2em solid black;
+    padding: 1.5em;
+    margin: 1em 0;
+    background-color: rgb(214, 214, 214);
+}
+
+.titulo_receta {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding-bottom: 2em;
+}
+
+.titulo_receta h2 a {
+    text-decoration: none;
+    color: black;
+}

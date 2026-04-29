@@ -15,8 +15,6 @@ header {
     margin: 2% 0;
 }
 
-/* Style home */
-
 header ul {
     list-style: none;
     display: flex;
@@ -28,10 +26,14 @@ a {
     color: black;
 }
 
+/* Style home */
+
 main {
     display: flex;
     flex-direction: column;
     gap: 1.5%;
+    background-color: aliceblue;
+    padding: 5em;
 }
 
 h1, h2 {
@@ -76,6 +78,10 @@ li {
 .datos ul li {
     list-style: none;
     margin-right: 0;
+}
+
+.nombre_estudio {
+    padding-left: 2em;
 }
 
 /* Style estudios */
